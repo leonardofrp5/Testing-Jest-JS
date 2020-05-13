@@ -1,0 +1,29 @@
+{
+  "name": "testing-jest-js",
+  "version": "1.0.0",
+  "description": "Pruebas unitarias Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardofrp5/Testing-Jest-JS.git"
+  },
+  "keywords": [
+    "jest",
+    "pruebas",
+    "unitarias"
+  ],
+  "author": "Leonardo Romero <leonardofrp5@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardofrp5/Testing-Jest-JS/issues"
+  },
+  "homepage": "https://github.com/leonardofrp5/Testing-Jest-JS#readme",
+  "devDependencies": {
+    "babel-jest": "^26.0.1",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^26.0.1"
+  }
+}
