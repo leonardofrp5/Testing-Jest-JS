@@ -2,9 +2,9 @@
   "name": "testing-jest-js",
   "version": "1.0.0",
   "description": "Pruebas unitarias Jest",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,9 @@
   },
   "homepage": "https://github.com/leonardofrp5/Testing-Jest-JS#readme",
   "devDependencies": {
-    "babel-jest": "^26.0.1",
-    "babel-polyfill": "^6.26.0",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-jest": "^24.8.0",
     "jest": "^26.0.1"
   }
 }
