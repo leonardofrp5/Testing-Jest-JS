@@ -10,6 +10,6 @@ describe('Tets with data type array', () => {
   });
 
   it('Length array', () => {
-    expect(arrayFruits()).toHaveLength(5);
+    expect(arrayColors()).toHaveLength(5);
   });
 });
