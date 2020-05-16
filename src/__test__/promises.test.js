@@ -6,6 +6,14 @@ describe('Test promise', () => {
     getDataFromApi(api).then(data => {
       expect(data.results.length).toBeGreaterThan(0);
       done();
-    })
-  })
+    });
+  });
+
+  it('Promise resolve', () => {
+    expect(Promise.resolve('Hello!')).resolves.toBe('Hello!');
+  });
+
+  it('Promise reject', () => {
+    expect(Promise.reject('Error')).rejects.toBe('Error');
+  });
 });
