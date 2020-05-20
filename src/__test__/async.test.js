@@ -21,7 +21,23 @@ describe('Testing using promises with async/await', () => {
 		expect(results.length).toBeGreaterThan(0);
 		
 		const { name } = await getDataFromApi('https://rickandmortyapi.com/api/character/1')
-		expect(name).toEqual('Rick Sanchez');
-		
-	})
+    expect(name).toEqual('Rick Sanchez');
+  });
+
+  it('Tets error 404', async () => {
+    const apiError = 'http://httpstat.us/404';
+    const peticion = getDataFromApi(apiError);
+    await expect(peticion).rejects.toEqual(Error('Request failed with status code 404'));
+  });
+
+  it('Tets created 201', async () => {
+    const apiError = 'http://httpstat.us/201';
+    const peticion = getDataFromApi(apiError);
+    await expect(peticion).resolves.toEqual({"code": 201, "description": "Created"});
+  });
+
+  it('Tets Resolve and Rejects', async () => {
+    await expect(Promise.resolve('Hello')).resolves.toBe('Hello');
+    await expect(Promise.reject('Error')).rejects.toBe('Error');
+  });
 })
