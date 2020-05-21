@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test whit snapshot test request 1`] = `
+Object {
+  "gender": "Male",
+  "id": 1,
+  "name": "Leonardo Romero",
+  "species": "Humano",
+  "status": "Vivo",
+}
+`;
