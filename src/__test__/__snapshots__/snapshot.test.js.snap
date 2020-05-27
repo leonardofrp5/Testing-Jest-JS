@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`test whit snapshot changed value in snapshot 1`] = `
+Object {
+  "id": Any<Number>,
+  "name": "Leo Romero",
+}
+`;
+
+exports[`test whit snapshot fails test 1`] = `
+Object {
+  "createAt": 2020-05-27T03:18:48.149Z,
+  "id": 13,
+}
+`;
+
 exports[`test whit snapshot test request 1`] = `
 Object {
   "gender": "Male",
